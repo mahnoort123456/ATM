@@ -29,7 +29,7 @@ if (pinAnswer.PIN === myPin) {
         console.log("Your remaining balance is :" + myBalance);
     }
     else if (operationAns.operation === "checkBalance") {
-        console.log("remaining balance is" + myBalance);
+        console.log("Your balance is" + myBalance);
     }
 }
 else {
