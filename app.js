@@ -1,17 +1,17 @@
 import inquirer from "inquirer";
 let myBalance = 10000; // Dollar
 let myPin = 2914;
-const pinAnswer = await inquirer.prompt({
+const pinAnswer = await inquirer.prompt([{
     name: "PIN",
     message: "Enter your PIN",
     type: "number"
-});
+}]);
 if (pinAnswer.PIN === myPin) {
     console.log("Correct PIN code!!!");
     let operationAns = await inquirer.prompt([
         {
             name: "operation",
-            message: "please! select operation",
+            message: "please! select option",
             type: "list",
             choice: ["withDraw", "checkBalance"]
         }
